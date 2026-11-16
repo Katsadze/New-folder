@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სემანტიკური ცხრილი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="page">
+
+     <header class="header">
+        <div class="logo">TechStudio</div>
+        <nav class="nav">
+        <a href="#hero">მთავარი</a>
+        <a href="#pricing">ფასები</a>
+        <a href="#packages">პაკეტები</a>
+        <a href="#contact">კონტაქტი</a>
+
+        </nav>
+     </header>
+
+     <aside class="sidebar">
+        <h3>სწრაფი ნავიგაცია</h3>
+        <ul class="sidebar-list">
+        <li><a href="#pricing">სერვისების ტარიფები</a></li>
+        <li><a href="#packages">სპეციალური შეთავაზებები</a></li>
+        <li><a href="#packages">VIP პაკეტები</a></li>
+        </ul>
+       <div class="sidebar-note">
+        <strong>აქცია</strong>3-თვიან პაკეტზე მოქმედებს 20%-იანი ფასდაკლება!
+       </div>
+     </aside>
+
+     <main class="main">
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>ციფრული სერვისები</h1>
+                <p>აირჩიეთ თქვენზე მორგებული პაკეტი</p>
+                <a href="#packages" class="btn">ნახვა</a>
+            </div> 
+        </section>
+        
+        <section id="pricing" class="pricing-section">
+            <h2>ჩვენი სერვისები და ტარიფები</h2>
+         <div class="table-wrap">   <table>
+          <caption>სერვისების ფასების სია</caption>
+          <thead>
+            <tr>
+              <th>სერვისი</th>
+              <th>ხანგრძლივობა</th>
+              <th>ფასი</th>
+              <th>შენიშვნა</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>საბაზო პაკეტი</td>
+              <td>1 თვე</td>
+              <td>50 ₾</td>
+              <td rowspan="2">პოპულარული არჩევანი</td>
+            </tr>
+            <tr>
+              <td>სტანდარტ პაკეტი</td>
+              <td>2 თვე</td>
+              <td>90 ₾</td>
+            </tr>
+            <tr>
+              <td colspan="2">სპეციალური შეთავაზება (3 თვიანი აბონემენტი)</td>
+              <td>120 ₾</td>
+              <td>ფასდაკლებით</td>
+            </tr>
+            <tr>
+              <td>VIP პაკეტი</td>
+              <td>6 თვე</td>
+              <td>250 ₾</td>
+              <td>ინდივიდუალური მხარდაჭერა</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">სულ (ყველა პაკეტის ჯამი)</td>
+              <td>510 ₾</td>
+              <td>—</td>
+            </tr>
+          </tfoot>
+        </table>
+       </div>
+        </section>
+
+       <section id="packages" class="cards-section">
+        <h2>პოპულარული პაკეტები</h2>
+
+        <div class="cards">
+            <article class="card card--featured">
+            <span class="badge">მთავარი შეთავაზება</span>
+            <h3>სპეციალური 3-თვიანი პაკეტი</h3>
+            <p>მიიღეთ სრული წვდომა ყველა სერვისზე 20%-იანი ფასდაკლებით და პრიორიტეტული მხარდაჭერით.</p>
+            <div class="price">120 ₾</div>
+          </article>
+
+          <article class="card card--tall">
+            <span class="badge badge--gold">VIP</span>
+            <h3>VIP პაკეტი (6 თვე)</h3>
+            <p>პერსონალური მენეჯერი, 24/7 კონსულტაცია, ექსკლუზიური მასალები და ინდივიდუალური გეგმის შედგენა.</p>
+            <div class="price">250 ₾</div>
+          </article>
+
+          <article class="card">
+            <h3>საბაზო პაკეტი</h3>
+            <p>იდეალურია დამწყებთათვის 1 თვის ვადით.</p>
+            <div class="price">50 ₾</div>
+          </article>
+
+          <article class="card">
+            <h3>სტანდარტ პაკეტი</h3>
+            <p>ოპტიმალური არჩევანი 2 თვიანი სტაბილური პროგრესისთვის.</p>
+            <div class="price">90 ₾</div>
+          </article>
+
+          <article class="card">
+            <h3>კორპორატიული</h3>
+            <p>სპეციალური პირობები გუნდებისა და კომპანიებისთვის.</p>
+            <div class="price">400 ₾</div>
+          </article>
+        </div>
+    </section>
+</main>
+    <footer id="contact" class="footer">
+        <p>© 2026 TechStudio — ყველა უფლება დაცულია.</p>
+        
+    </footer>
+</div>
+</body>
+</html>
