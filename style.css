@@ -349,3 +349,95 @@ font-size: 0.9rem;
 .footer:hover {
     background-color: #2563eb;
 }
+
+
+.animation-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px 20px;
+}
+
+.ball {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #5b45ff;
+
+  animation: bounce 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-60px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.animation-card {
+  width: 220px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: cardAppear 1s ease 0.5s 1 forwards;
+}
+
+@keyframes cardAppear {
+  0% {
+    transform: translate(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.animation-button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #8b1e2d;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.animation-button:hover {
+  animation: buttonpulse 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes buttonpulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ball,
+  .animation-card,
+  .animation-button:hover {
+  animation: none;
+  }
+}
