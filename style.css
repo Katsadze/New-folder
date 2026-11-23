@@ -441,3 +441,176 @@ font-size: 0.9rem;
   animation: none;
   }
 }
+
+.registration-section {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.register-section h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.register-section > p {
+  margin-bottom: 30px;
+  color: #8b0404;
+}
+
+.register-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgb(104, 16, 16);
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #b14b4b;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8B1E2D;
+}
+
+.register-form fieldset {
+  border: 1px solid #d8c5c5;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.register-form legend {
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color:#8B1E2D ;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.submit-btn:hover {
+  background-color: #651321;
+}
+
+.register-form input:focus-visible,
+.register-form select:focus-visible,
+.register-form textarea:focus-visible,
+.register-form button:focus-visible {
+  outline: 3px solid #000000;
+  outline-color: 3px;
+}
+
+.register-form input:not(:placeholder-shown):invalid {
+  border-color: #dc2626;
+}
+
+.register-form input:not(:placeholder-shown):valid {
+  border-color: #059669;
+}
+
+.field-status {
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.register-form input:valid + .field-status::after {
+  content: "✓ სწორია";
+  color: green;
+}
+
+.register-form input:invalid + .field-status::after {
+  content: "✕ შეამოწმეთ მონაცემი";
+  color: red;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.register-form input:disabled,
+.register-form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.sending-btn {
+  margin-top: 10px;
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+.success-message {
+  color: green;
+  background-color: #dcfce7;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.failure-message {
+    color: red;
+    background-color: #fee2e2;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.success-message,
+.failure-message {
+  display: none;
+}
+
+.success-message {
+  display: block;
+}
+
+.failure-message {
+  display: block;
+}
